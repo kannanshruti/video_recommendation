@@ -43,7 +43,8 @@ if __name__ == '__main__':
     # Get closest matches for query clipID
     res = vr.get_closest_match(query, avg_vector, 10)
     query_json = vr.get_json_list(json_dict, [res])
-    vr.disp_json(query_json)
+    print query_json
+    # vr.disp_json(query_json)  # Uncomment for a more readable output
 
     # Generate JSON objects for the specified list of clipIDs
     matches = []
@@ -53,7 +54,7 @@ if __name__ == '__main__':
     for query in queries:
         matches = vr.get_closest_match(query, avg_vector, 10)
         closest_match.append(matches)
-        
-    # Generate the complete JSON list of JSON objects
+
+    # Generate the final JSON list of JSON objects
     json_list = vr.get_json_list(json_dict, closest_match,
                                  output_file='results.json')

@@ -226,7 +226,7 @@ class VideoRecommendation:
         dist = Counter()
         for clip_id, vec in avg_vector.items():
             dist[clip_id] = self.cosine_sim(query_vec, vec)
-        matches_id = list(reversed(dist.most_common()[:-n-1:-1]))
+        matches_id = list(reversed(dist.most_common()[:n-1]))
         for clip_id, _ in matches_id:
             matches.append(clip_id)
         return (query, matches)
