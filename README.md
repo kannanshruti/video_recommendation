@@ -21,6 +21,6 @@ Video recommendation system using word embeddings
 5. For each query (‘clip ID’ for which recommendations are sought), cosine similarity is used to measure ‘similarity’ (given by high cosine value), and the top 10 of them are returned as JSON objects.
 
 ## References:
-https://radimrehurek.com/gensim/
-https://pandas.pydata.org/pandas-docs/stable/
-pep8 was used to ensure the code files are as readable and uniform as possible
+1. https://radimrehurek.com/gensim/
+2. https://pandas.pydata.org/pandas-docs/stable/
+3. pep8 was used to ensure the code files are as readable and uniform as possible
