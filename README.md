@@ -20,9 +20,6 @@ Video recommendation system using word embeddings
 4. For each ‘clip ID’, the associated words in the ‘human vocabulary’ are now replaced by the average vector for the words in it.
 5. For each query (‘clip ID’ for which recommendations are sought), cosine similarity is used to measure ‘similarity’ (given by high cosine value), and the top 10 of them are returned as JSON objects.
 
-Pending:  explanation, check what's to be written in a readme, how to run
-submit to their link: results.json, report, code files(2), github link
-
 ## References:
 https://radimrehurek.com/gensim/
 https://pandas.pydata.org/pandas-docs/stable/
