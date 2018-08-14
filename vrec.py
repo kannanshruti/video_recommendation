@@ -7,6 +7,8 @@ Author: kshruti
 # stdlib
 import numpy as np
 import re
+import json
+from collections import Counter
 
 # pip-installed
 import pandas as pd
@@ -14,8 +16,8 @@ from gensim.models import Word2Vec
 import nltk
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
-from collections import Counter
-import json
+
+
 nltk.download('stopwords')
 
 
