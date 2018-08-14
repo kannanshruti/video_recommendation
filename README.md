@@ -10,7 +10,7 @@ Video recommendation system using word embeddings
 ## How to run:
 1. Download ‘main.py’ and ‘vrec.py’ to the same folder (along with the csv files).
 2. Specify the path of the folder containing the input csv files on line 16 of ‘main.py’.
-    (line 16) > folder = '<PATH>/similar-staff-picks-challenge/'
+    > (line 16) folder = '<PATH>/similar-staff-picks-challenge/'
 3. > ‘python main.py’
 
 ## Algorithm:
