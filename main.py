@@ -20,9 +20,17 @@ if __name__ == '__main__':
 
     # Creating object and analysing data
     vr = vrec.VideoRecommendation(folder, categories, clip_categories, clips)
+    print 'DataFrame Shape:'
+    print ' categories:', vr.categories.shape
+    print ' clip_categories:', vr.clip_categories.shape
+    print ' clips:', vr.clips.shape
+    print ' combined data:', vr.combined_data.shape, '\n'
 
     # Extract part of dataset with column where we don't want NaNs
     dataset1 = vr.get_dataset('title')
+    print '#Clips in total:', vr.combined_data['id'].count()
+    print '#Clips without titles:', len(vr.combined_data) - vr.combined_data['title'].count()
+    print '#Clips extra in clip_categories', len(vr.combined_data) - len(vr.clips), '\n'
 
     # Extract words from the required columns
     sentences = {}
