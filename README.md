@@ -16,7 +16,7 @@ Video recommendation system using word embeddings
 ## Algorithm:
 1. The solution, first, extracts all relevant information from the 3 input csv files, and combines it in a single ‘DataFrame’ for easy access. 
 2. Next, words are extracted from the clip ‘title’ and clip ‘category names’ by default, and this serves as input to the word embedding model. vocabulary. Options are provided for including ‘category names’, ‘captions’ and excluding ‘stop words’ from this input ‘human’ vocabulary. 
-3. Next, The model is now created using these words, with minimum occurrences of each word as 1 and the dimension of the resulting vector for each word is 10.
+3. Next, the model is now created using these words, with minimum occurrences of each word as 1 and the dimension of the resulting vector for each word is 10.
 4. For each ‘clip ID’, the associated words in the ‘human vocabulary’ are now replaced by the average vector for the words in it.
 5. For each query (‘clip ID’ for which recommendations are sought), cosine similarity is used to measure ‘similarity’ (given by high cosine value), and the top 10 of them are returned as JSON objects.
 
